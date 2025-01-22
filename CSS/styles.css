@@ -1,0 +1,182 @@
+/* Estilos generales para la mayor parte de la pagina */
+body, h1, h2, p, ul, li, figure, figcaption, button, input, textarea, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos para el body,especifican la fuente el intelineado y la alineacion del texto */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Marca el espacio por debajo del header */
+header {
+    margin-bottom: 40px;
+}
+
+/* Especifica el tamaño de letra del header y el espaio que tiene esta por debajo */
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Los colores delsubtexto del header y el tamaño de la letra */
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Alinea y delimita los espacios del main*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Crea los margenes del section */
+section {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Estilos de tamaño y margenes para los H2 */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la lista ul */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Estilos para los li de la lista */
+li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 0 1 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Margenes para el figure */
+figure {
+    margin: 0;
+}
+
+/* Estilos de las imagenes(logos)*/
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos con negrita para el apartado figcaption */
+figcaption {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Formato del boton de ver mas */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    align-self: center;
+}
+
+/* Hover para el boton de ver mas*/
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Margenes y centrados para el from */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Espaciados centrados y margenes para las estiquetas los imputs y el textarea */
+label, input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Estilos especificos del textarea */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* estilos para el boton del formulario con su tamaño */
+button[type="submit"] {
+    max-width: 200px;
+}
+
+/* estilos de epaciado y alineacion para el footer */
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* estilos de links del footer */
+footer nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* hoover de los links del foooter */
+footer nav a:hover {
+    text-decoration: underline;
+}
+/*Estilos de tamaño*/
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+/*Estilos de como se muestran los logos*/
+footer .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+/*Estilo de la imagen de los iconos del footer*/
+footer .social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+/*estilos que gestionan el hover de los iconos del footer*/
+footer .social-icons img:hover {
+    transform: scale(1.2); 
+}
+
